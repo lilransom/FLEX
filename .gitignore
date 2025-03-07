@@ -1,0 +1,13 @@
+# Игнорируем системные файлы Windows
+*.log
+*.tmp
+*.cache
+Thumbs.db
+Desktop.ini
+
+# Игнорируем временные файлы и кеш
+node_modules/
+dist/
+.env
+.DS_Store
+AppData/
