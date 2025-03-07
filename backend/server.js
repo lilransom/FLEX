@@ -1,14 +1,11 @@
-const express = require("express");
-const cors = require("cors");
-const bodyParser = require("body-parser");
-
+﻿const express = require('express');
 const app = express();
-app.use(cors());
-app.use(bodyParser.json());
+const PORT = process.env.PORT || 3000;
 
-app.post("/submit", (req, res) => {
-    console.log(req.body);
-    res.json({ message: "Form submitted successfully!" });
+app.get('/', (req, res) => {
+    res.send('Backend is working!');
 });
 
-app.listen(3000, () => console.log("Server running on port 3000"));
+app.listen(PORT, () => {
+    console.log(\Server running on port \\);
+});
